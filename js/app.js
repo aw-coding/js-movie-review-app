@@ -11,10 +11,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 })
 
+
+
 const getReview = (event) => {
     event.preventDefault();
     const newListItem = document.createElement('li');
-    newListItem.textContent = `${event.target.title.value} ${event.target.director.value} ${event.target.review.value}`;
+    const missable = document.querySelector("#worth-a-watch");
+    if (missable.checked == true) {
+        newListItem.textContent = `${event.target.title.value} ${event.target.director.value} ${event.target.review.value}     Worth watching`;
+    }
+    else {
+        newListItem.textContent = `${event.target.title.value} ${event.target.director.value} ${event.target.review.value}     Not worth watching`;
+    }
     newListItem.classList.add('movie-reviews');
     const list = document.querySelector('ul');
     list.appendChild(newListItem);
