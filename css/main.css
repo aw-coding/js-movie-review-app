@@ -1,4 +1,30 @@
 body {
     background-color: blanchedalmond;
+    font-family:'Courier New', Courier, monospace
+}
+
+h1 {
+    padding-top: 2pc;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+#add-item-form {
+    text-align: center;
+    margin-right: 50px;
+}
+
+#head-current-reviews {
+    padding-top: 2pc;
+}
+
+#save-button {
+    margin-top: 2pc;
+    padding-right: 1pc;
+    text-align: center;
 }
 

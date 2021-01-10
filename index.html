@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>The Movie King</h1>
-    <h2>Feast on my superior opinions, intellect-starved peasants!</h2>
+    <h1>Five Word Movie Reviews</h1>
+    <h2>Brevity is the heart of wit, as someone once said. Keep your reviews microscopic, and add whether they are worth watching!</h2>
     <form id="add-item-form">
         <div class="form-item">
             <label for="title" >Title</label>
-            <input type="text" id="title"/>
+            <input type="text" id="title" />
             <label for="director" >Director</label>
             <input type="text" id="director"/>
             <label for="review" >Five Word Review</label>
@@ -23,14 +23,14 @@
             <!-- <input type="radio", id="missable"/>
             <label for="missable">Missable</label> -->
         </div>
-        <input type="submit" value="save"/>
+        <input id="save-button" type="submit" value="save"/>
         <input id='delete-button' type='button', value ='delete-all' />
         
 
 
     </form>
 
-    <h2>Current Reviews</h2>
+    <h2 id="head-current-reviews">Current Reviews:</h2>
     <ul id="current-reviews"></ul>
 </body>
 </html>
